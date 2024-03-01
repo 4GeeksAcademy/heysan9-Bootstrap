@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram" alt="Bootstrap" width="35" height="30"></i> <strong>Instagram</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Create a new post
+        </button>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privaty and Data</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav>
+      <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+        <button class="nav-link active p-3 m-3" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+          role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+        <button class="nav-link p-3 m-3" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+          role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <div class="container imagenes">
+          <div class="row">
+            <div class="col-4 p-3">
+              <img src="https://picsum.photos/id/29/304/236" class="rounded float-start img-feed" alt="dienteleon">
+            </div>
+            <div class="col-4 p-3">
+              <img src="https://picsum.photos/id/41/304/236" class="rounded img-feed" alt="gotas">
+            </div>
+            <div class="col-4 p-3">
+              <img src="https://picsum.photos/id/50/304/236" class="rounded float-end img-feed" alt="ave">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 p-3">
+              <img src="https://picsum.photos/id/43/304/236" class="rounded float-start img-feed" alt="puente">
+            </div>
+            <div class="col-4 p-3">
+              <img src="https://picsum.photos/id/70/304/236" class="rounded img-feed" alt="bosque">
+            </div>
+            <div class="col-4 p-3">
+              <img src="https://picsum.photos/id/76/304/236" class="rounded float-end img-feed" alt="bicicleta">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 p-3">
+              <img src="https://picsum.photos/id/82/304/236" class="rounded float-start img-feed" alt="flor">
+            </div>
+            <div class="col-4 p-3">
+              <img src="https://picsum.photos/id/103/304/236" class="rounded img-feed" alt="zapatos">
+            </div>
+            <div class="col-4 p-3">
+              <img src="https://picsum.photos/id/128/304/236" class="rounded float-end img-feed" alt="logo">
+            </div>
+          </div>
+        </div>
+    
+      </div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+    
+        <div class="card  p-3 m-3 mx-auto" style="width: 40rem;">
+          <div class="d-flex">
+            <div class="p-2 w-100">
+              <h3>Yellowstone National Park</h3>
+            </div>
+            <div class="p-2 flex-shrink-1">
+              <p>25/50</p>
+            </div>
+          </div>
+          <img src="https://cdn.outsideonline.com/wp-content/uploads/2019/10/23/geyser-yelowstone-burst_h.jpg?crop=16:9&width=1600&enable=upscale&quality=100" class="card-img-top" alt="yellow">
+          <div class="card-body">
+            <p class="card-text"><strong>2500 Likes</strong><br>It isn't just the astounding geological wonders that give our country's first national park its allure, from 500 geysers that erupt up to 400 feet into the air to deep glacier-carved valleys and fossil forests..</p>
+          </div>
+        </div>
+        <div class="card  p-3 m-3 mx-auto" style="width: 40rem;">
+          <div class="d-flex">
+            <div class="p-2 w-100">
+              <h3>Las maravillosas Cataratas del Niagara</h3>
+            </div>
+            <div class="p-2 flex-shrink-1">
+              <p>26/50</p>
+            </div>
+          </div>
+          <img src="https://photo620x400.mnstatic.com/c635f0d65071805abecdd2abc28d12a2/cataratas-del-niagara-_-ontario.jpg?quality=70&format=pjpg" class="card-img-top" alt="cataratas">
+          <div class="card-body">
+            <p class="card-text"><strong>1800 Likes</strong><br>Su espectacularidad radica en el gran caudal de agua que registran . El Rio Niágara está alimentado por el Lago Erie y se une con el Lago Ontario. Sus 56 kilómetros de recorrido forman la frontera entre Canadá y EE.UU.</p>
+          </div>
+        </div>
+        <div class="card  p-3 m-3 mx-auto" style="width: 40rem;">
+          <div class="d-flex">
+            <div class="p-2 w-100">
+              <h3>Helen un hermoso pueblo en Georgia</h3>
+            </div>
+            <div class="p-2 flex-shrink-1">
+              <p>27/50</p>
+            </div>
+          </div>
+          <img src="https://tattlingtourist.com/wp-content/uploads/2017/12/LSSGE6593.jpg" class="card-img-top" alt="helen">
+          <div class="card-body">
+            <p class="card-text"><strong>250 Likes</strong><br>ciudad de estilo bávaro al noreste de Georgia. Es conocida por sus viñedos y por el Parque Estatal Unicoi, que se encuentra en las cercanías. Varios caminos atraviesan el Bosque Nacional Chattahoochee y llegan hasta las cascadas de Anna Ruby y Raven Cliff.</p>
+          </div>
+        </div>
+        <div class="card  p-3 m-3 mx-auto" style="width: 40rem;">
+          <div class="d-flex">
+            <div class="p-2 w-100">
+              <h3>Los pulmones del mundo, Amazonas.</h3>
+            </div>
+            <div class="p-2 flex-shrink-1">
+              <p>28/50</p>
+            </div>
+          </div>
+          <img src="https://miro.medium.com/v2/format:webp/0*47E8f1pWJBIp7N2X.jpg" class="card-img-top" alt="Amazonas">
+          <div class="card-body">
+            <p class="card-text"><strong>470 Likes</strong><br>Amazonian wildlife puts on a spectacular show every day, starting with the pink river dolphins that populate its waters. At the point where Colombia, Peru and Brazil meet, indigenous cultures such as the Ticunas, Huitotos and Yucunas share the jungle and animals such as anteaters.</p>
+          </div>
+        </div>
+        <div class="card  p-3 m-3 mx-auto" style="width: 40rem;">
+          <div class="d-flex">
+            <div class="p-2 w-100">
+              <h3>El espectacular Nevado del Ruiz</h3>
+            </div>
+            <div class="p-2 flex-shrink-1">
+              <p>29/50</p>
+            </div>
+          </div>
+          <img src="https://www.utb.edu.co/wp-content/uploads/2023/05/Nevado_del_Ruiz.jpg" class="card-img-top" alt="ruiz">
+          <div class="card-body">
+            <p class="card-text"><strong>900 Likes</strong><br>Existen varios tipos de volcanes, pero este en particular, es de forma cónica y de gran altura, pues se aproxima a los 5.320 metros. Adicionalmente, tiene un glaciar en la cima, que debido al cambio climático y a la erupción ocurrida en 1985 ha venido disminuyendo.</p>
+          </div>
+        </div>
+        <div class="card  p-3 m-3 mx-auto" style="width: 40rem;">
+          <div class="d-flex">
+            <div class="p-2 w-100">
+              <h3>El hermoso Hawaii</h3>
+            </div>
+            <div class="p-2 flex-shrink-1">
+              <p>30/50</p>
+            </div>
+          </div>
+          <img src="https://www.fodors.com/wp-content/uploads/2019/01/2-Visit-Oahus-Pearl-Harbor-1.jpg" class="card-img-top" alt="hawaii">
+          <div class="card-body">
+            <p class="card-text"><strong>730 Likes</strong><br>es un archipiélago volcánico aislado en el Pacífico central. Sus islas son famosas por sus paisajes escabrosos de riscos, cascadas, follaje tropical y playas con arenas doradas, rojas, negras e incluso verdes.</p>
+          </div>
+        </div>
+        <div class="card  p-3 m-3 mx-auto" style="width: 40rem;">
+          <div class="d-flex">
+            <div class="p-2 w-100">
+              <h3>Puente de cristal en China</h3>
+            </div>
+            <div class="p-2 flex-shrink-1">
+              <p>31/50</p>
+            </div>
+          </div>
+          <img src="https://www.infraestructurapublica.cl/wp-content/uploads/2021/03/img-ppal-nota5-15032021.jpg" class="card-img-top" alt="china">
+          <div class="card-body">
+            <p class="card-text"><strong>951 Likes</strong><br>El gigante asiático bate su propio récord con este nuevo puente de vidrio de 526,14 metros de longitud a 100 metros de altura. Está ubicado sobre las Tres Gargantas de Huangchuan, en Lianzhou, al sur del país, que ya cuenta con más de 2.000 estructuras de cristal.</p>
+          </div>
+        </div>
+        <div class="card  p-3 m-3 mx-auto" style="width: 40rem;">
+          <div class="d-flex">
+            <div class="p-2 w-100">
+              <h3>La gran muralla China</h3>
+            </div>
+            <div class="p-2 flex-shrink-1">
+              <p>32/50</p>
+            </div>
+          </div>
+          <img src="https://vidalturismo.com/wp-content/uploads/2019/07/MURALLA-WEB.jpg" class="card-img-top" alt="muralla">
+          <div class="card-body">
+            <p class="card-text"><strong>120 Likes</strong><br>La larga historia de China es uno de los principales motivos para que la gente la visite, es una de las civilizaciones más antiguas del mundo con monumentos y más monumentos que nos recuerdan continuamente lo grande que es. Uno de ellos es la que parece interminable Gran Muralla China, cruzando gran parte de su territorio desde la frontera con Corea hasta el desierto de Gobi, entre el norte de China y el sur de Mongolia.</p>
+          </div>
+        </div>
+        <div class="card  p-3 m-3 mx-auto" style="width: 40rem;">
+          <div class="d-flex">
+            <div class="p-2 w-100">
+              <h3>El espectacular Monserrate</h3>
+            </div>
+            <div class="p-2 flex-shrink-1">
+              <p>33/50</p>
+            </div>
+          </div>
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/09/b7/b5/57.jpg" class="card-img-top" alt="monserrate">
+          <div class="card-body">
+            <p class="card-text"><strong>752 Likes</strong><br>Get a thorough overview of Bogota's most famous attraction on a group walking tour of Monserrate. The efficient excursion begins with a scenic cable car ride to the top of the mountain..</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    
+    
+    
+           <!-- Modal -->
+           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+           aria-labelledby="staticBackdropLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                 <form>
+                   <div class="mb-3">
+                     <label for="recipient-name" class="col-form-label">Caption:</label>
+                     <textarea class="form-control" placeholder="Add the caption of your post here" id="floatingTextarea2"
+                       style="height: 100px"></textarea>
+                     <button type="button" class="btn btn-light">
+                       <i class="fa-solid fa-camera"></i>
+                     </button>
+                     <button type="button" class="btn btn-light">
+                       <i class="fa-solid fa-location-dot"></i>
+                     </button>
+                   </div>
+                 </form>
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-success">Publish</button>
+               </div>
+             </div>
+           </div>
+         </div> 
+        </div>
+    </body>
+    
+    </html>
